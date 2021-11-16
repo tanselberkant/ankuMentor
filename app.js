@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Template Engine
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 
 const PORT = process.env.PORT || 3000;
 
