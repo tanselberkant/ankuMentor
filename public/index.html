@@ -14,42 +14,39 @@
     />
     <!--main css -->
     <link rel="stylesheet" href="./main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <section id="welcome">
-      <!-- Basic Navbar -->
-      <header class="primary-header myFlex">
-        <div>
-          <img
-            src="./images/heroLogo.png"
-            style="height: 60px; width: 60px"
-            class="logo"
-            alt="ankara university logo"
-          />
+    <!-- Navbar -->
+  <nav class="navbar">
+    <div class="inner-width">
+      <a href="/" class="logo"></a>
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="#">Anasayfa</a>
+        <a href="#">Sayfam</a>        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="inner-width">
+      <div class="content">
+        <h1>Ankara Üniversitesi Mentor/Mentee Programı</h1> 
+        <p>Ankara Üniversitesi Öğrencileri için hazırlanmış, üniversideki yeni öğrencilere yardımcı olabilecek bir mentor/mentee programı prototipidir</p>      
+        <div class="buttons">
+          <a href="#">Giris Yap</a>          
         </div>
-        <button aria-controls="primary-navigation"><span class="sr-only">Menu</span></button>
-        <nav>
-          <ul id="primary-navigation" class="primary-navigation myFlex">
-            <li class="active">
-              <a href="index.html">Anasayfa</a>
-            </li>
-            <li>
-              <a href="dashboard.html">Sayfam</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <!-- /Basic navbar -->
-      <!-- Hero text-->
-        <div class="hero-text px-2">
-          <h1 class="display-4">Ankara Üniversitesi Mentor/Mentee Programı</h1>
-          <p>Ankara Üniversitesi Öğrencileri için hazırlanmış, üniversideki yeni öğrencilere yardımcı olabilecek bir mentor/mentee programı prototipidir</p>
-          <!--Mentor'unu bul butonu-->
-        </div>      
-      <!-- /Hero text -->
-    </section>
-    <footer>
-    <!--Footer-->
+      </div>
+    </div>
+  </section>
+      <!--Footer-->
     </footer>
+    <script src="./main.js" defer></script>
   </body>
 </html>
