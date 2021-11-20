@@ -18,35 +18,65 @@
   </head>
   <body>
     <!-- Navbar -->
-  <nav class="navbar">
-    <div class="inner-width">
-      <a href="/" class="logo"></a>
-      <button class="menu-toggler">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-menu">
-        <a href="#">Anasayfa</a>
-        <a href="#">Sayfam</a>        
-      </div>
-    </div>
-  </nav>
-
-  <!-- Home -->
-  <section id="home">
-    <div class="inner-width">
-      <div class="content">
-        <h1>Ankara Üniversitesi Mentor/Mentee Programı</h1> 
-        <p>Ankara Üniversitesi Öğrencileri için hazırlanmış, üniversideki yeni öğrencilere yardımcı olabilecek bir mentor/mentee programı prototipidir</p>      
-        <div class="buttons">
-          <a href="#">Giris Yap</a>          
+    <nav class="navbar">
+      <div class="inner-width">
+        <a href="/" class="logo"></a>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-menu">
+          <a href="#">Anasayfa</a>
+          <a href="#">Sayfam</a>
         </div>
       </div>
-    </div>
-  </section>
-      <!--Footer-->
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="inner-width">
+        <div class="content">
+          <h1>Ankara Üniversitesi Mentor/Mentee Programı</h1>
+          <p>
+            Ankara Üniversitesi Öğrencileri için hazırlanmış, üniversideki yeni
+            öğrencilere yardımcı olabilecek bir mentor/mentee programı
+            prototipidir
+          </p>
+          <div class="buttons">
+            <a href="#">Giris Yap</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="listingMentors">
+      <div class="inner-width">
+        <div class="content">
+          <h1>Mentor Öğrencilerimiz</h1>
+          <hr style="border: 3px solid #d4af37" />
+          <div class="myMentors"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>
+        copyright &copy;  Topluma Hizmet Dersi - Tansel Berkant Oflaz
+        <span id="footerDate">2020</span>. all rights reserved
+      </p>
     </footer>
+    <!--Back to top button-->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./main.js" defer></script>
+    <script src="./index.js"></script>
   </body>
 </html>
