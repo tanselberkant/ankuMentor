@@ -7,74 +7,49 @@
     <title>Anku Mentor</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <!-- font awesome -->    
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <!--main css -->
-    <!-- <link rel="stylesheet" href="./main.css" />  -->
-
-    <!-- Tailwind CSS -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <!-- Basic Navbar -->
-    <nav class="flex items-center justify-between flex-wrap bg-black p-6 text-white">
-      <div class="flex items-center flex-shrink-0 text-white ">
-        <a class="">
-          <img class="w-2/6" src="./images/heroLogo.png">
-        </a>
-        <span class="font-semibold -ml-10 text-xl tracking-tight mr-20">Ankara University Mentor Program </span>
-      </div>
-      <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
-      </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
-          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-            Anasayfa 
-          </a>
-          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-            Sayfam
-          </a>
-        </div>        
-      </div>
-    </nav>
-    <!-- /Basic navbar -->
-
-    <!-- Login Form Container -->
-    <div class="flex justify-center my-24">
-      <div class="max-w-sm shadow-lg " id="card_img_container">
-        <div class="flex justify-center">
-          <img class="w-5/12 " src="./images/heroLogo.png" alt="Sunset in the mountains">
+    <section id="welcome">
+      <!-- Basic Navbar -->
+      <header class="primary-header myFlex">
+        <div>
+          <img
+            src="./images/heroLogo.png"
+            style="height: 60px; width: 60px"
+            class="logo"
+            alt="ankara university logo"
+          />
         </div>
-        <div class="w-full max-w-xs">
-          <form class="bg-white  rounded px-8 pt-6 pb-8 mb-4" method="POST">
-            <div class="mb-4">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="studentNo">
-                Öğrenci Numaranız
-              </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="studentNo" name="studentNo" type="number" placeholder="Öğrenci numaranız">
-            </div>
-            <div class="mb-6">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                Şifreniz
-              </label>
-              <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="******************">              
-              <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
-            </div>
-            <div class="flex items-center justify-end">
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                Sign In
-              </button>              
-            </div>
-          </form>          
-        </div>
-      </div>
-    </div>
-    <!-- /Login Form Container -->
+        <button aria-controls="primary-navigation"><span class="sr-only">Menu</span></button>
+        <nav>
+          <ul id="primary-navigation" class="primary-navigation myFlex">
+            <li class="active">
+              <a href="index.html">Anasayfa</a>
+            </li>
+            <li>
+              <a href="dashboard.html">Sayfam</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- /Basic navbar -->
+      <!-- Hero text-->
+        <div class="hero-text px-2">
+          <h1 class="display-4">Ankara Üniversitesi Mentor/Mentee Programı</h1>
+          <p>Ankara Üniversitesi Öğrencileri için hazırlanmış, üniversideki yeni öğrencilere yardımcı olabilecek bir mentor/mentee programı prototipidir</p>
+          <!--Mentor'unu bul butonu-->
+        </div>      
+      <!-- /Hero text -->
+    </section>
+    <footer>
+    <!--Footer-->
+    </footer>
   </body>
 </html>
