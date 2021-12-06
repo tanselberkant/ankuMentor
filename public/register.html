@@ -33,33 +33,34 @@
     </nav>
 
     <!-- Register Home -->
-    <section id="home" style="padding-bottom:100px !important ;">
+    <section id="home" style="padding-bottom:250px !important ;">
       <div class="main_div">
-        <div class="title">Kayıt Ol</div>               
-        <form action="#">
+        <div class="title">Kayıt Ol</div>          
+        <div class="form-alert"></div>             
+        <form class="registerForm">
           <div class="input_box">
-            <input type="text" placeholder="Adınız" name="firstName" required>
+            <input type="text" placeholder="Adınız" name="firstName" class="firsNameInput" >
             <div class="icon"><i class="fas fa-user"></i></div>
           </div>
           <div class="input_box">
-            <input type="text" placeholder="Soyadınız" name="lastName" required>
+            <input type="text" placeholder="Soyadınız" name="lastName" class="lastNameInput" >
             <div class="icon"><i class="fas fa-user"></i></div>
           </div>
           <div class="input_box">
-            <input type="number" placeholder="Okul Numaranız" name="studentNumber" required>
+            <input type="number" placeholder="Okul Numaranız" name="studentNumber" class="studenNoInput" >
             <div class="icon"><i class="fas fa-graduation-cap"></i></div>
           </div>
           <div class="input_box">
-            <input type="email" placeholder="E-mail Adresiniz" name="email" required>
+            <input type="email" placeholder="E-mail Adresiniz" name="email" class="emailInput" >
             <div class="icon"><i class="fas fa-envelope"></i></div>
           </div>          
           <div class="input_box">
-            <input type="password" placeholder="Parolanız" name="password" required>
+            <input type="password" placeholder="Parolanız" name="password" class="passwordInput" >
             <div class="icon"><i class="fas fa-lock"></i></div>
           </div>
           
           <div class="input_box button">
-            <input type="submit" value="Kayıt Ol">
+            <button id="myButton" type="submit">Kayıt Ol</button>
           </div>
           
         </form>

@@ -88,17 +88,20 @@ form .option_div {
   font-size: 16px;
   color: #d4af37;
 }
-.button input {
-  padding-left: 0;
+.button button {
+  margin-left: 30px;
+  padding-left:0;
   background: #d4af37;
   color: #fff;
   border: none;
   font-size: 20px;
   font-weight: 500;
+  width: 80%;
+  height: 43px;
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.button input:hover {
+.button button:hover {
   background: #fff;
   color: #d4af37;
   border: 2px solid #d4af37;
@@ -116,4 +119,20 @@ form a {
 }
 form a:hover {
   text-decoration: underline;
+}
+
+.form-alert {
+  margin-top: 20px;
+  text-transform: capitalize;
+  color: #842029;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.text-success {
+  color: #0f5132;
+}
+
+.text-danger {
+  color: #842029;
 }
