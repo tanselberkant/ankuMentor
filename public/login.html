@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anku Mentor</title>
+    <title>Anku Mentor | Register</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <!-- font awesome -->
@@ -12,8 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <!--main css -->
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
@@ -28,36 +28,34 @@
         </button>
         <div class="navbar-menu">
           <a href="/">Anasayfa</a>
-          <a href="#">Sayfam</a>
         </div>
       </div>
     </nav>
 
-    <!-- Home -->
-    <section id="home">
-      <div class="inner-width">
-        <div class="content">
-          <h1>Ankara Üniversitesi Mentor/Mentee Programı</h1>
-          <p>
-            Ankara Üniversitesi Öğrencileri için hazırlanmış, üniversideki yeni
-            öğrencilere yardımcı olabilecek bir mentor/mentee programı
-            prototipidir
-          </p>
-          <div class="buttons">
-            <a href="./login.html">Giris Yap</a>
+    <!-- Register Home -->
+    <section id="home" style="padding-bottom:100px !important ;">
+      <div class="main_div">
+        <div class="title">Kayıt Ol</div>               
+        <form action="#">
+          <div class="input_box">
+            <input type="number" placeholder="Okul Numaranız" name="studentNumber" required>
+            <div class="icon"><i class="fas fa-graduation-cap"></i></div>
           </div>
-        </div>
+          <div class="input_box">
+            <input type="password" placeholder="Parolanız" name="password" required>
+            <div class="icon"><i class="fas fa-lock"></i></div>
+          </div>
+          
+          <div class="input_box button">
+            <input type="submit" value="Giriş Yap">
+          </div>
+          <div class="sign_up">
+            Kayıt olmak için <a href="./register.html">Tıklayınız...</a>
+          </div>
+        </form>
       </div>
     </section>
-    <section id="listingMentors">
-      <div class="inner-width">
-        <div class="content">
-          <h1>Mentor Öğrencilerimiz</h1>
-          <hr style="border: 3px solid #d4af37" />
-          <div class="myMentors"></div>
-        </div>
-      </div>
-    </section>
+
     <footer class="footer">
       <p>
         copyright &copy;  Topluma Hizmet Dersi - Tansel Berkant Oflaz
@@ -68,7 +66,6 @@
     <a href="#home" class="scroll-link top-link">
       <i class="fas fa-arrow-up"></i>
     </a>
-
     <!-- axios -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
@@ -77,6 +74,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="./scripts/index.js"></script>
+    <script src="scripts/register.js" defer></script>
   </body>
 </html>

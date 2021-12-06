@@ -84,7 +84,7 @@ html {
 .logo {
   width: 44px;
   height: 32px;
-  background-image: url('./images/black-logo.png');
+  background-image: url('../images/black-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -128,7 +128,7 @@ html {
 }
 
 .sticky .logo {
-  background-image: url('./images/black-logo.png');
+  background-image: url('../images/black-logo.png');
 }
 
 .sticky .navbar-menu a {
@@ -143,7 +143,7 @@ html {
   height: 100vh;
   min-height: 500px;
   background: linear-gradient(rgba(3, 0, 30, 0.9), rgba(3, 0, 30, 0.8)),
-    url('./images/bg.jpg') center no-repeat;
+    url('../images/bg.jpg') center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -194,6 +194,24 @@ html {
   .menu-toggler {
     display: block;
   }
+
+  #home .content {
+    padding-top: 220px;
+    padding-bottom: 100px;
+  }
+
+  #home .main_div {
+    margin-top: 100px;
+  }
+
+  #home {
+    height: 100%;
+  }
+
+  #listingMentors {
+    margin-bottom: 280px;
+  }
+  
 
   .navbar-menu {
     position: fixed;
@@ -247,10 +265,10 @@ html {
 
 #listingMentors .inner-width {
   display: flex;
-  justify-content: center;
   height: 100%;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 #listingMentors .content {
@@ -270,15 +288,16 @@ html {
 }
 
 #listingMentors .content .myMentors p {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 600;
   color: #111 !important;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
 
 .footer {
   padding: 2rem;
-  background-color: #03254c;
+  background-color: #010e1f;  
 }
 
 .footer p {
@@ -286,7 +305,6 @@ html {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
-  margin-bottom: 0;
 }
 
 .top-link {
