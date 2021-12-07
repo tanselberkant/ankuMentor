@@ -2,6 +2,7 @@ const myMentorDiv = document.querySelector('.myMentors');
 const loginButton = document.querySelector('#loginButton');
 const dashButton = document.querySelector('#dashboardButton');
 const loginNav = document.querySelector('#loginNav');
+const logOutNav = document.querySelector('#logOutNav');
 const dashNav = document.querySelector('#dashNav');
 
 const showMentors = async () => {
@@ -28,6 +29,7 @@ const showMentors = async () => {
       dashButton.classList.remove('customButton');
       loginNav.style.display = 'none';
       dashNav.classList.remove('customButton');
+      logOutNav.classList.remove('customButton');
       console.log(userIN);
     }
   } catch (error) {

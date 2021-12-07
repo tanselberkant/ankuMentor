@@ -39,7 +39,7 @@ const loginStudent = (req, res) => {
         bcrypt.compare(password, student.password, (err, success) => {
           if (success) {
             req.session.userID = student._id;
-            res.status(200).json({ message: 'You are logged in' , userIN});
+            res.status(200).json({ message: 'You are logged in', userIN });
           } else {
             res.status(400).json({ message: 'Your Password is not correct !' });
           }
@@ -54,8 +54,29 @@ const loginStudent = (req, res) => {
   }
 };
 
+const logOutStudent = (req, res) => {
+  req.session.destroy(() => {
+    res.redirect('/');
+  });
+};
+
+const getStudentDashBoardPage = async (req, res) => {
+  try {
+    const student = await Student.findOne({ _id: req.session.userID }).populate(
+      'mentor'
+    );
+    let name = student.firstName + ' '+ student.lastName
+    let studentAvatar = `https://avatars.dicebear.com/api/bottts/${name}.svg`
+    res.status(200).json({ userIN, student, studentAvatar });
+  } catch (error) {
+    res.status(400).json({ status: 'fail', error });
+  }
+};
+
 module.exports = {
   // getRandomMentor,
   createStudent,
   loginStudent,
+  logOutStudent,
+  getStudentDashBoardPage,
 };

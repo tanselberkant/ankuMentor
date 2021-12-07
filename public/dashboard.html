@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Dashboard</h2>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anku Mentor | Register</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="inner-width">
+        <a href="/" class="logo"></a>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-menu">
+            <a href="/">Anasayfa</a>                      
+            <a href="./dashboard.html"  id="dashNav">Sayfam</a>
+            <a href="/api/users/logout"  id="logOutNav">Cıkış Yap</a>
+            <a href="./login.html" id="loginNav">Giriş Yap</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Register Home -->
+    <section id="home" style="padding-bottom:250px !important ;">
+      <div class="main_div">
+          
+        <img alt="" class="dashImg">     
+       <h2 id="studentName"></h2>
+       <!-- <p id="studentName"><span>Student Name: </span> </p> -->
+       <p id="studentNumber"></p>
+       <h3>Mentor Öğrenci Bilgileri</h3>
+       <p class="mentorInfos" id="mentorName"><span><i class="fas fa-user"></i></span> </p>
+       <p class="mentorInfos" id="mentorEmail"><span><i class="fas fa-envelope"></i></span></p>
+       <p class="mentorInfos" id="mentorPhone"><span><i class="fas fa-phone-square"></i></span></p>
+       <p class="mentorInfos" id="mentorFaculty"><span><i class="fas fa-graduation-cap"></i></span></p>
+       <div class="returnBtn">
+        <a class="dashBtn" href="/">Anasayfaya Dön</a>
+       </div>       
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        copyright &copy;  Topluma Hizmet Dersi - Tansel Berkant Oflaz
+        <span id="footerDate">2020</span>. all rights reserved
+      </p>
+    </footer>
+    <!--Back to top button-->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="scripts/dashboard.js" defer></script>
+  </body>
 </html>

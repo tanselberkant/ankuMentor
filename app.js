@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
+const MongoStore = require('connect-mongo');
 const connectDB = require('./db/connect');
 const app = express();
 const mentorRoute = require('./routes/mentorRoute');
@@ -18,6 +19,7 @@ app.use(
     secret: 'sporstmans_can_do_code',
     resave: false,
     saveUninitialized: true,
+    store: MongoStore.create({mongoUrl: `${process.env.MONGO_URI}`})
   })
 );
 
