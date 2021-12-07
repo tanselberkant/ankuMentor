@@ -23,6 +23,7 @@ const StudentSchema = new mongoose.Schema({
   },
   studentNumber: {
     type: Number,
+    unique: true,
     required: [true, 'Must have a studentNumber'],
     maxlength: [6, 'Student number can have 6 character'],
   },

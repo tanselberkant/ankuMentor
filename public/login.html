@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/register.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
@@ -32,22 +33,23 @@
       </div>
     </nav>
 
-    <!-- Register Home -->
+    <!-- Login Box -->
     <section id="home" style="padding-bottom:100px !important ;">
       <div class="main_div">
-        <div class="title">Kayıt Ol</div>               
-        <form action="#">
+        <div class="title">Giriş Yap</div>    
+        <div class="form-alert"></div>                 
+        <form action="#" class="loginForm">
           <div class="input_box">
-            <input type="number" placeholder="Okul Numaranız" name="studentNumber" required>
+            <input type="number" class="studentNumberInput" placeholder="Okul Numaranız" name="studentNumber" required>
             <div class="icon"><i class="fas fa-graduation-cap"></i></div>
           </div>
           <div class="input_box">
-            <input type="password" placeholder="Parolanız" name="password" required>
+            <input type="password" placeholder="Parolanız" class="passwordInput" name="password" required>
             <div class="icon"><i class="fas fa-lock"></i></div>
           </div>
           
           <div class="input_box button">
-            <input type="submit" value="Giriş Yap">
+            <button id="myButton" type="submit">Giriş Yap</button>
           </div>
           <div class="sign_up">
             Kayıt olmak için <a href="./register.html">Tıklayınız...</a>
@@ -67,6 +69,7 @@
       <i class="fas fa-arrow-up"></i>
     </a>
     <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
       integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
@@ -74,6 +77,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="scripts/register.js" defer></script>
+    <script src="./scripts/login.js" defer></script>
   </body>
 </html>

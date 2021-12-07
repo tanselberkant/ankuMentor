@@ -16,7 +16,7 @@ myRegisterForm.addEventListener('submit', async (e) => {
   const password = passwordInput.value;
 
   try {
-    await axios.post('/api/users', {
+    await axios.post('/api/users/singup', {
       firstName,
       lastName,
       studentNumber,
