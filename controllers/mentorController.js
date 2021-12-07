@@ -13,7 +13,7 @@ const getAllMentors = async (req, res) => {
   try {
     const mentors = await Mentor.find({});
     console.log(req.session.userID);
-    res.status(200).json({ mentors });  
+    res.status(200).json({ mentors, userIN });
   } catch (error) {
     res.status(500).json({ msg: error });
   }

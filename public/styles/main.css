@@ -184,8 +184,7 @@ html {
   transition: 0.2s linear;
 }
 
-#home .buttons a:hover,
-#home .buttons a:nth-child(2) {
+#home .buttons a:hover {
   background-color: #d4af37;
   color: #fff;
 }
@@ -320,6 +319,10 @@ html {
   border-radius: var(--radius);
   color: var(--clr-white);
   animation: bounce 2s ease-in-out infinite;
+}
+
+.customButton {
+  display: none !important;
 }
 
 

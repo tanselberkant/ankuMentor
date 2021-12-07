@@ -39,7 +39,7 @@ const loginStudent = (req, res) => {
         bcrypt.compare(password, student.password, (err, success) => {
           if (success) {
             req.session.userID = student._id;
-            res.status(200).json({ message: 'You are logged in' });
+            res.status(200).json({ message: 'You are logged in' , userIN});
           } else {
             res.status(400).json({ message: 'Your Password is not correct !' });
           }
