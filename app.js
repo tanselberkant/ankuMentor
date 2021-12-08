@@ -7,6 +7,22 @@ const app = express();
 const mentorRoute = require('./routes/mentorRoute');
 const userRoute = require('./routes/userRoute');
 
+dbURL =
+  'mongodb+srv://tansel:11terimGS@mentorcluster.mmt48.mongodb.net/mentorProgramDB?retryWrites=true&w=majority';
+
+// Db connection
+mongoose
+  .connect(dbURL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('Db Connected Successfully');
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 // Global Variable
 global.userIN = null;
 
@@ -19,7 +35,7 @@ app.use(
     secret: 'sporstmans_can_do_code',
     resave: false,
     saveUninitialized: true,
-    store: MongoStore.create({mongoUrl: `${process.env.MONGO_URI}`})
+    store: MongoStore.create({ mongoUrl: dbURL }),
   })
 );
 
@@ -31,16 +47,8 @@ app.use('*', (req, res, next) => {
 app.use('/api/mentors', mentorRoute);
 app.use('/api/users', userRoute);
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-const start = async () => {
-  try {
-    await connectDB(process.env.MONGO_URI);
-    app.listen(PORT, () => {
-      console.log(`Server is listening on port ${PORT}`);
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-start();
+app.listen(port, () => {
+  console.log(`Sunucu port ${port} baslatildi`);
+});
