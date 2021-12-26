@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anku Mentor</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--main css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="inner-width">
+        <a href="/" class="logo"></a>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-menu">
+          <a href="/">Anasayfa</a>             
+          <a href="./dashboard.html" class="customButton" id="dashNav">Sayfam</a>
+          <a href="./communities.html">Topluluklar</a>
+          <a href="./contact.html">Bize Ulaşın</a>
+          <a href="./login.html" id="loginNav">Giriş Yap</a>     
+          <a href="/api/users/logout" class="customButton" id="logOutNav">Cıkış Yap</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="inner-width">
+        <div class="content">
+          <h1>Ankara Üniversitesi Mentor/Mentee Programı</h1>
+          <p>
+            Ankara Üniversitesi Öğrencileri için hazırlanmış, üniversideki yeni
+            öğrencilere yardımcı olabilecek bir mentor/mentee programı
+            prototipidir
+          </p>
+          <div class="buttons">
+            <a href="./login.html" id="loginButton">Giris Yap</a>
+            <a href="./dashboard.html" id="dashboardButton" class="customButton">Sayfam</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="listingMentors">
+      <div class="inner-width">
+        <div class="content">
+          <h1>Ankara Üniversitesi Öğrenci Toplulukları</h1>
+          <hr style="border: 3px solid #d4af37" />
+          <div class="myCommunities"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>
+        copyright &copy;  Topluma Hizmet Dersi - Tansel Berkant Oflaz
+        <span id="footerDate">2020</span>. all rights reserved
+      </p>
+    </footer>
+    <!--Back to top button-->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/main.js" defer></script>
+    <!-- <script src="./scripts/index.js"></script> -->
+    <script src="./scripts/communities.js" defer></script>
+  </body>
+</html>

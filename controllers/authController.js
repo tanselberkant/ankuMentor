@@ -1,7 +1,8 @@
 const Student = require('../models/Student');
 const Mentor = require('../models/Mentor');
 const bcrypt = require('bcrypt');
-const axios = require('axios');
+// const axios = require('axios');
+// const cheerio = require('cheerio');
 
 // const getRandomMentor = async (req, res) => {
 //   try {
@@ -66,20 +67,24 @@ const getStudentDashBoardPage = async (req, res) => {
     const student = await Student.findOne({ _id: req.session.userID }).populate(
       'mentor'
     );
-    let name = student.firstName + ' '+ student.lastName
-    let studentAvatar = `https://avatars.dicebear.com/api/bottts/${name}.svg`
+    let name = student.firstName + ' ' + student.lastName;
+    let studentAvatar = `https://avatars.dicebear.com/api/bottts/${name}.svg`;
     res.status(200).json({ userIN, student, studentAvatar });
   } catch (error) {
     res.status(400).json({ status: 'fail', error });
   }
 };
 
-const getCommunitiesList = async (req,res) => {
-  axios.get
-}
-
-
-
+// const getCommunitiesList = async (req, res) => {
+//   axios.get('http://sks.ankara.edu.tr/topluluklar/').then((response) => {
+//     const html = response.data;
+//     const $ = cheerio.load(html);
+    
+//     $('tr',html).each(function() => {
+//       const comName = $(this).text
+//     })
+//   });
+// };
 
 module.exports = {
   // getRandomMentor,
@@ -87,4 +92,5 @@ module.exports = {
   loginStudent,
   logOutStudent,
   getStudentDashBoardPage,
+  // getCommunitiesList
 };

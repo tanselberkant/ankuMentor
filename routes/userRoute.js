@@ -9,5 +9,6 @@ router.route('/signin').post(authController.loginStudent);
 router.route('/singup').post(authController.createStudent);
 router.route('/logout').get(authController.logOutStudent);
 router.route('/dashboard').get(authController.getStudentDashBoardPage);
+// router.route('/communities').get(authController.getCommunitiesList);
 
 module.exports = router;
