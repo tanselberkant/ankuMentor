@@ -14,7 +14,6 @@
     />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/register.css" />
-    <link rel="stylesheet" href="./styles/dashboard.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
@@ -28,32 +27,36 @@
           <span></span>
         </button>
         <div class="navbar-menu">
-            <a href="/">Anasayfa</a>                      
-            <a href="./dashboard.html"  id="dashNav">Sayfam</a>
-            <a href="./communities.html">Topluluklar</a>
-            <a href="./contact.html">Bize Ulaşın</a>
-            <a href="/api/users/logout"  id="logOutNav">Cıkış Yap</a>
-            <a href="./login.html" id="loginNav">Giriş Yap</a>
+          <a href="/">Anasayfa</a>
         </div>
       </div>
     </nav>
 
-    <!-- Register Home -->
+    <!-- Contact Home -->
     <section id="home" style="padding-bottom:250px !important ;">
       <div class="main_div">
-          
-        <img alt="" class="dashImg">     
-       <h2 id="studentName"></h2>
-       <!-- <p id="studentName"><span>Student Name: </span> </p> -->
-       <p id="studentNumber"></p>
-       <h3>Mentor Öğrenci Bilgileri</h3>
-       <p class="mentorInfos" id="mentorName"><span><i class="fas fa-user"></i></span> </p>
-       <p class="mentorInfos" id="mentorEmail"><span><i class="fas fa-envelope"></i></span></p>
-       <p class="mentorInfos" id="mentorPhone"><span><i class="fas fa-phone-square"></i></span></p>
-       <p class="mentorInfos" id="mentorFaculty"><span><i class="fas fa-graduation-cap"></i></span></p>
-       <div class="returnBtn">
-        <a class="dashBtn" href="/">Anasayfaya Dön</a>
-       </div>       
+        <div class="title">Bize Ulaşın</div>                         
+        <div class="form-alert"></div>             
+        <form class="contactForm">
+          <div class="input_box">
+            <input type="text" placeholder="Adınız ve Soyadınız" name="fullName" class="fullNameInput" required>
+            <div class="icon"><i class="fas fa-user"></i></div>
+          </div>
+          <div class="input_box">
+            <input type="number" placeholder="Okul Numaranız" name="schoolNo" class="studentNoInput" required>
+            <div class="icon"><i class="fas fa-user"></i></div>
+          </div>
+          <div class="input_box">
+            <input type="email" placeholder="E-mail Adresiniz" name="email" class="emailInput" >
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+          </div>          
+          <div class="input_box">
+            <textarea name="message"  class="contactMessage" placeholder="Mesajınız" cols="31" rows="3" required></textarea>
+          </div>          
+          <div class="input_box button" style="padding-top: 30px;">
+            <button id="myButton" type="submit">Gönder</button>
+          </div>          
+        </form>
       </div>
     </section>
 
@@ -75,6 +78,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="scripts/dashboard.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
   </body>
 </html>

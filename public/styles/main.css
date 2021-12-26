@@ -140,7 +140,7 @@ html {
 }
 
 #home {
-  height: 100vh;
+  height: 95vh;
   min-height: 500px;
   background: linear-gradient(rgba(3, 0, 30, 0.9), rgba(3, 0, 30, 0.8)),
     url('../images/bg.jpg') center no-repeat;

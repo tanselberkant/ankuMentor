@@ -136,3 +136,16 @@ form a:hover {
 .text-danger {
   color: #842029;
 }
+
+.contactMessage {
+  margin-bottom: 200px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.alert-success {
+  color: #0f5132 
+}
+.alert-danger {
+  color: #842029;  
+}
