@@ -1,6 +1,7 @@
 const Student = require('../models/Student');
 const Mentor = require('../models/Mentor');
 const bcrypt = require('bcrypt');
+const axios = require('axios');
 
 // const getRandomMentor = async (req, res) => {
 //   try {
@@ -72,6 +73,13 @@ const getStudentDashBoardPage = async (req, res) => {
     res.status(400).json({ status: 'fail', error });
   }
 };
+
+const getCommunitiesList = async (req,res) => {
+  axios.get
+}
+
+
+
 
 module.exports = {
   // getRandomMentor,

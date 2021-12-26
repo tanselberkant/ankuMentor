@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-const connectDB = require('./db/connect');
 const app = express();
 const mentorRoute = require('./routes/mentorRoute');
 const userRoute = require('./routes/userRoute');

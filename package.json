@@ -22,6 +22,7 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
     "cheerio": "^1.0.0-rc.10",
     "connect-mongo": "^4.6.0",
